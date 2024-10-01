@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+.containerGame {
+  width: 40rem;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+.containerCell {
+  width: 100%;
+  height: 33%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.cell {
+  width: 33%;
+  height: 100%;
+  border: 1px solid grey;
+  background-size: cover;
+  background-position: center;
+}
+.cell:nth-of-type(1),
+.cell:nth-of-type(4),
+.cell:nth-of-type(5) {
+  border-left: none;
+}
+.cell:nth-of-type(3),
+.cell:nth-of-type(6),
+.cell:nth-of-type(9) {
+  border-right: none;
+}
+.cell:nth-of-type(1),
+.cell:nth-of-type(2),
+.cell:nth-of-type(3) {
+  border-top: none;
+}
+
+.cell:hover {
+  border: 1px solid red;
+}
+.container-button {
+  width: 50%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+button {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  color: white;
+  font-size: 1.5rem;
+}
+button:hover {
+  width: 13rem;
+  box-shadow: 1px 1px 10px 1px rgb(74, 73, 73);
+}
+button:nth-of-type(1) {
+  background-color: rgb(0, 0, 255);
+}
+button:nth-of-type(2) {
+  background-color: rgb(215, 9, 9);
+}
+
+@media (min-width: 648px) and (max-width: 702px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 592px) and (max-width: 648px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 536px) and (max-width: 592px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (min-width: 498px) and (max-width: 536px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media (min-width: 456px) and (max-width: 498px) {
+  html {
+    font-size: 11px;
+  }
+  body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media (min-width: 428px) and (max-width: 456px) {
+  html {
+    font-size: 10px;
+  }
+  body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container-button {
+    width: 100%;
+  }
+  button {
+    width: 18rem;
+    height: 7rem;
+  }
+}
+
+@media (min-width: 378px) and (max-width: 428px) {
+  html {
+    font-size: 9px;
+  }
+  body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container-button {
+    width: 100%;
+  }
+  button {
+    width: 18rem;
+    height: 7rem;
+  }
+}
+
+@media (min-width: 334px) and(max-width: 378px) {
+  html {
+    font-size: 8px;
+  }
+  body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container-button {
+    width: 100%;
+  }
+  button {
+    width: 18rem;
+    height: 7rem;
+  }
+}
+@media (min-width: 290px) and (max-width: 334px) {
+  html {
+    font-size: 7px;
+  }
+  body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container-button {
+    width: 100%;
+  }
+  button {
+    width: 18rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 290px) {
+  html {
+    font-size: 5px;
+  }
+  body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container-button {
+    width: 100%;
+  }
+  button {
+    width: 18rem;
+    height: 7rem;
+  }
+}
